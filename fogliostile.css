@@ -17,23 +17,22 @@
 }
 
 #gioca {
-	left: 41%;
-	top: 26%;
+	left: 40.5%;
+	top: 28.5%;
   opacity: 0.9;
 }
 
 #storia {
-	left: 40.3%;
-	top: 39.8%;
+	left: 39.3%;
+	top: 44.3%;
   opacity: 0.9;
 
 }
 
 #crediti {
-	left: 28.4%;
-	top: 51.6%;
+	left: 25.6%;
+	top: 57.6%;
   opacity: 0.9;
-
 }
 
 a {
@@ -69,6 +68,9 @@ canvas {
 
 body {
   background-image: url('pagina web/Sfondo.jpg');
+  margin: 0;
+  padding: 0;
+overflow: hidden;
 }
 
 #bottone {
@@ -82,6 +84,7 @@ body {
 	margin-top: 2%;
   margin-left: 15%;
   transition-duration: 0.5s;
+  z-index: 2;
 
 }
 
