@@ -1,0 +1,177 @@
+@font-face {
+    font-family: Fontesque, serif;
+     src: url(fontesque.ttf);
+}
+
+.tasti{
+    border: none;
+    padding: 0;
+    text-align: center;
+    text-decoration: none; /* elimina sottolineature dal testo */
+    display: inline; /* non va a capo e occupa solo la larghezza necessaria */
+    font-size: 37px;
+    font-family: Fontesque, serif;
+    transition-duration: 0.5s;
+    cursor: pointer;
+	position: absolute;
+}
+
+#gioca {
+	left: 41%;
+	top: 26%;
+  opacity: 0.9;
+}
+
+#storia {
+	left: 40.3%;
+	top: 39.8%;
+  opacity: 0.9;
+
+}
+
+#crediti {
+	left: 28.4%;
+	top: 51.6%;
+  opacity: 0.9;
+
+}
+
+a {
+  color: #392b1b;
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #392b1b;
+
+}
+
+#giocaslide {
+
+    text-align: center;
+    text-decoration: none; /* elimina sottolineature dal testo */
+    font-size: 30px;
+    opacity: 0.9;
+
+    font-family: Fontesque, serif;
+    cursor: pointer;
+}
+
+.tasti:hover {
+ transform: scale(1.1) perspective(1px)
+}
+
+canvas {
+  	display: block;
+    margin: auto;
+}
+
+body {
+  background-image: url('pagina web/Sfondo.jpg');
+}
+
+#bottone {
+    width: 50px;
+
+}
+
+#tastohome {
+	  display: block;
+  position: absolute;
+	margin-top: 2%;
+  margin-left: 15%;
+  transition-duration: 0.5s;
+
+}
+
+#tastohome:hover {
+   transform: scale(1.1) perspective(1px)
+}
+
+.mySlides fade {
+  display: block;
+
+}
+
+#prev, #next {
+/* freccette avanti e indietro */
+  cursor: pointer;
+  position: absolute;
+  top: 90%; /* determina la distanza dal margine superiore del contenitore ancestor (contenuto) */
+  width: auto;
+  margin: 0;
+  /*filter: drop-shadow(0px 2px 3px #392b1b); */
+  display: inline-block; /* permette di definire una dimensione e non va a capo */
+  border: none;
+  overflow: hidden; /* il contenuto eccedente dalle dimensioni fissate viene nascosto */
+  text-decoration: none;
+  text-align: center;
+  transition-duration: 0.5s;
+
+}
+
+#prev:hover {
+   transform: scale(1.1) perspective(1px)
+}
+
+#next:hover {
+  transform: scale(1.1) perspective(1px)
+}
+
+#next {
+  left: 82%;
+}
+
+#prev {
+  left: 13%;
+}
+
+
+#tastolino {
+/*  filter: drop-shadow(0px 2px 3px #392b1b); */
+  cursor: pointer;
+  position: absolute;
+  top: 90%; /* determina la distanza dal margine superiore del contenitore ancestor (contenuto) */
+  width: auto;
+  left: 82%;
+  margin: 0;
+/*  padding: 0px 20px; */
+  display: inline-block; /* permette di definire una dimensione e non va a capo */
+  border: none;
+  overflow: hidden; /* il contenuto eccedente dalle dimensioni fissate viene nascosto */
+  text-decoration: none;
+  text-align: center;
+  transition-duration: 0.5s;
+
+}
+
+#tastolino:hover {
+   transform: scale(1.1) perspective(1px)
+}
+
+
+.container {
+  display: block;
+  margin: auto;
+  width: 70%;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3.5s;
+  animation-name: fade;
+  animation-duration: 3.5s;
+}
+
+
+@-webkit-keyframes fade {
+  from {opacity: 0; filter: brightness(0%)}
+  to {opacity: 1; filter: brightness(100%)}
+}
+
+@keyframes fade {
+  from {opacity: 0; filter: brightness(0%)}
+  to {opacity: 1; filter: brightness(100%)}
+}

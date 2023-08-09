@@ -1,0 +1,87 @@
+<html>
+<head>
+  <title>Little red reaching hood</title>
+  <link rel="stylesheet" href="fogliostile.css"> <!--Foglio CSS-->
+  <link rel="shortcut icon" href="pagina web/favicon.ico"> <!-- Favicon=logo accanto al titolo -->
+
+
+</head>
+<body>
+    <header>    </header>
+    	<div id="tastohome">
+    		<a href="Homepage.html"><img src="pagina web/home.png" id="bottone";></a></div>
+        <div id="copertina">
+<div id="contenuto"> <!-- Slideshow -->
+  <div class="row">
+    <div class="container">
+  <div class="mySlides">
+    <div class="fade">
+        <p style="text-align:center"><img src="pagina web/SCENA 1.jpg" class="slideshow"></p>
+</div>
+<a id="next" onclick="plusSlides(1)"><img src="pagina web/freccia.png"></a>
+
+      </div>
+  <div class="mySlides">
+    <div class="fade">
+        <p style="text-align:center"><img src="pagina web/SCENA 2.jpg" class="slideshow"></p>
+</div>
+<a id="prev" onclick="plusSlides(-1)"><img src="pagina web/freccia1.png"></a>
+<a id="next" onclick="plusSlides(1)"><img src="pagina web/freccia.png"></a>
+      </div>
+  <div class="mySlides">
+    <div class="fade">
+
+        <p style="text-align:center"><img src="pagina web/SCENA 3.jpg" class="slideshow"></p></div>
+        <a id="prev" onclick="plusSlides(-1)"><img src="pagina web/freccia1.png"></a>
+
+					  <div id="tastolino"><a id="next"><a href="gioco.html"><img src="pagina web/freccia_2.png"></a></div>
+
+      </div>
+    </div>
+  <!--  <a id="prev" onclick="plusSlides(-1)"><img src="pagina web/freccia.png"></a> -->
+
+        </div>
+
+
+    <script>
+   var slideIndex = 1; // parte dalla slide numero 1
+showSlides(slideIndex); // la funzione showSlides qui viene invocata
+
+// scorrimento avanti e indietro
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+ // viene sommato a SlideIndex la variabile n. n corrisponde a 1 se si clicca per andare avanti e -1 se si clicca per andare indietro
+ // += vuol dire sommare
+}
+
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+// n corrisponde al numero del pallino che viene cliccato
+// qui la funzione currentSlide viene dichiarata (sopra viene invocata)
+}
+
+function showSlides(n) { // la funzione showSlides qui viene dichiarata
+  var i;
+// document racchiude tutta la pagina html
+// invocando la funzione get... vengono restituiti degli elementi che hanno in comune la classe mySlides e dot
+  var slides = document.getElementsByClassName("mySlides"); // la classe mySlides identifica le varie immagini dello slideshow
+
+// cicli definiti: occorrono a inizializzare lo slideshow
+   for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+// si parte dal numero 0 (il contatore parte sempre da 0), se i è minore del numero di slides (7 in questo caso), bisogna incrementare di 1.
+// dato che si parte da 0, tutte le slides non vengono mostrate
+  }
+
+
+  slides[slideIndex-1].style.display = "block";
+  // dato che il contatore parte da 0, per avere il numero della slide corrente bisogna sottrarre 1
+  // la proprietà style.display = block permette di visualizzare la slide (viene visualizzata una slide e non tutte)
+
+  dots[slideIndex-1].className += " active";
+  // permette di cambiare colore al pallino selezionato
+  // lo spazio nella classe active occorre a non far attaccare le due classi (dot e active) nel momento in cui la funzione viene invocata
+}
+    </script>
+</body>
